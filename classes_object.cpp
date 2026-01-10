@@ -1,19 +1,19 @@
-#include<bits/stdc++.h>
-using namespace std; 
-class teacher {
+#include <iostream>
+using namespace std;
+class Student{
     public:
-    string name;
-    string subject;
-    int salary;
-    string dep; 
+    int id;
+    string name; 
+
+    void display (){
+        cout << id << " " << name;
+    }
+
 };
 int main(){
-    teacher t1;
-    t1.name = "Akshat";
-    t1.subject = "computer science";
-    t1.salary = 25000;
-    t1.dep = "information technology";
-    cout << t1.salary << endl;
-
-    return 0;
+    Student s1;
+    s1.id = 001;
+    s1.name = "Akshat";
+    s1.display();
+    return 0; 
 }
